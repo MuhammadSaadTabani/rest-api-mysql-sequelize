@@ -1,0 +1,11 @@
+https://egghead.io/lessons/express-set-up-express-to-automatically-reload-on-save-with-nodemon
+
+bezkoder.com/node-js-express-sequelize-mysql/
+
+https://mfikri.com/en/blog/restful-api-express-sequelize
+
+https://sequelize.org/v7/
+
+https://www.geeksforgeeks.org/node-js-export-module/?ref=lbp
+
+https://www.youtube.com/watch?v=ta3QsxiNkEY&list=PLolI8AY2AS9YO1kf0i_ui5_sKtxZg-yiR&index=3
