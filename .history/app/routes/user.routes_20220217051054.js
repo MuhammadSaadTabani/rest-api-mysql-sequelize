@@ -10,6 +10,7 @@ export default () => {
     router.put('/:id', user.update);
     router.delete('/:id', user.deleteByID);
     router.delete('/', user.deleteAll);
+    // router.get('/posts/:id', user.getPosts);
 
     return router
 }

@@ -38,7 +38,9 @@ export const findAll = (req, res) => {
 export const findOne = (req, res) => {
     const id = req.params.id
     
-    User.findByPk(id)
+    User.findAll({
+        where: {id}
+    })
     .then((data)=>{
         if(data.length == 0){
             return res.json({

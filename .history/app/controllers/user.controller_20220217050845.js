@@ -38,12 +38,14 @@ export const findAll = (req, res) => {
 export const findOne = (req, res) => {
     const id = req.params.id
     
-    User.findByPk(id)
+    User.findAll({
+        where: {id}
+    })
     .then((data)=>{
         if(data.length == 0){
             return res.json({
                 success: true,
-                message: "User Not Found",
+                message: "User Not Founasdd",
                 data
             });
         }
@@ -118,20 +120,20 @@ export const deleteAll = (req, res) => {
     })
 }
 
-// export const getPosts = (req, res) => {
-//     return res.json({as:1})
-//     const id = req.params.id
-//     User.getPosts()
-//     .then(()=>{
-//         res.json({
-//             success: true,
-//             message: "suxes"
-//         });
-//     })
-//     .catch((err)=>{
-//         res.json({
-//             success: false,
-//             message: err.message
-//         })
-//     })
-// }
+export const getPosts = (req, res) => {
+    return res.json({as:1})
+    const id = req.params.id
+    User.getPosts()
+    .then(()=>{
+        res.json({
+            success: true,
+            message: "suxes"
+        });
+    })
+    .catch((err)=>{
+        res.json({
+            success: false,
+            message: err.message
+        })
+    })
+}
